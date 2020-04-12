@@ -1,6 +1,5 @@
-@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'UhBeeQUEENJ'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeQUEENJ.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'SangSangShinb7'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Handon3gyeopsal600g'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal600g.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 *{
     box-sizing: border-box;
@@ -8,10 +7,21 @@
 }
 
 h1{
-    font-family: 'UhBeeQUEENJ';
+    background-color: #8683dd;
+    height:130px;
+    font-family: 'Handon3gyeopsal600g';
     text-align: center;
     font-size: 50px;
-    color: #b07055;
+    color: #f7f8f2;
+    line-height: 130px;
 
 }
 
+main{
+    width: 800px;
+    margin: auto;
+}
+
+button{
+    text-align: right;
+}

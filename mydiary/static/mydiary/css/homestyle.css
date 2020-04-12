@@ -1,6 +1,5 @@
-@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'UhBeeQUEENJ'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeQUEENJ.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'SangSangShinb7'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Handon3gyeopsal600g'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal600g.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 *{
     box-sizing: border-box;
@@ -8,10 +7,13 @@
 }
 
 h1{
-    font-family: 'UhBeeQUEENJ';
+    background-color: #8683dd;
+    height:130px;
+    font-family: 'Handon3gyeopsal600g';
     text-align: center;
     font-size: 50px;
-    color: #b07055;
+    color: #f7f8f2;
+    line-height: 130px;
 
 }
 
@@ -20,37 +22,45 @@ h1{
 }
 
 #link{
-    width: 100px;
-    height: 35px;
-    /* text-align: right; */
+    width: 110px;
+    height: 30px;
+    text-align: right;
     line-height: 24px;
     margin: 10px;
-    border: 2px #f9b571 solid;
+    border: 2px #b8b6f8 solid;
     padding: 3px;
-    font-family: 'UhBeeQUEENJ';
+    font-family: 'KOMACON';
     float: right;
-    
+    border-radius: 7px;
     
 }
 
-hr{
-    height : 2px;
-    border-color : #f9b571;
-    background-color: #f9b571;
-}
+
 
 h3{
-    font-family: 'UhBeeQUEENJ';
+    font-family: 'KOMACON';
     font-weight: bold;
     font-size: 25px;
 }
 
 .date{
-    font-family: 'SangSangShinb7';
-    font-size: 20px;
+    font-family: 'KOMACON';
+    font-size: 10px;
+    
 }
 
 p{
-    font-family: 'UhBeeQUEENJ';
+    font-family: 'KOMACON';
 }
 
+main{
+    width: 800px;
+    margin: auto;
+}
+
+.for{
+    border: 2px #b8b6f8 solid;
+    padding: 1px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}

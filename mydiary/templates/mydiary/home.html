@@ -4,17 +4,24 @@
     <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/homestyle.css' %}"/>
 </head>
 
-<h1>아기사자의 다이어리입니다.</h1>
+<h1>넌 그럴때 뭐들어?</h1>
 
-<div id="m">
-    <div id="link">
-        <a href="{% url 'new' %}">일기 작성하기</a>
+
+
+<main>
+    <div id="m">
+        <div id="link">
+            <a href="{% url 'new' %}">나도 추천 할래</a>
+        </div>
     </div>
-</div>
 
-{% for post in posts_list %}
-    <h3> {{ post.title }}</h3>
-    <p class="date">{{ post.pub_date }}</p>
-    <p class="content">{{ post.body|linebreaks }}</p>
-    <hr>
-{% endfor %}
+    
+        {% for post in posts_list %}
+            <div class="for">
+                <h3> {{ post.title }}</h3>
+                <p class="date">{{ post.pub_date }}</p>
+                <p class="content">{{ post.body|linebreaks }}</p>
+            </div>   
+        {% endfor %}
+    
+</main>
