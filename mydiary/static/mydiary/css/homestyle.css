@@ -1,0 +1,56 @@
+@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'UhBeeQUEENJ'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeQUEENJ.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SangSangShinb7'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+*{
+    box-sizing: border-box;
+    background-color: #f7f8f2;
+}
+
+h1{
+    font-family: 'UhBeeQUEENJ';
+    text-align: center;
+    font-size: 50px;
+    color: #b07055;
+
+}
+
+#m{
+    height:50px;
+}
+
+#link{
+    width: 100px;
+    height: 35px;
+    /* text-align: right; */
+    line-height: 24px;
+    margin: 10px;
+    border: 2px #f9b571 solid;
+    padding: 3px;
+    font-family: 'UhBeeQUEENJ';
+    float: right;
+    
+    
+}
+
+hr{
+    height : 2px;
+    border-color : #f9b571;
+    background-color: #f9b571;
+}
+
+h3{
+    font-family: 'UhBeeQUEENJ';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.date{
+    font-family: 'SangSangShinb7';
+    font-size: 20px;
+}
+
+p{
+    font-family: 'UhBeeQUEENJ';
+}
+

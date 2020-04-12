@@ -1,0 +1,17 @@
+@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'UhBeeQUEENJ'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeQUEENJ.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SangSangShinb7'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+*{
+    box-sizing: border-box;
+    background-color: #f7f8f2;
+}
+
+h1{
+    font-family: 'UhBeeQUEENJ';
+    text-align: center;
+    font-size: 50px;
+    color: #b07055;
+
+}
+
