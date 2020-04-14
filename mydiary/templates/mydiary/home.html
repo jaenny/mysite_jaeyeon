@@ -2,10 +2,25 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/homestyle.css' %}"/>
+    <link rel="shortcut icon" href="#">
+    <style type="text/css">
+         /* a { text-decoration:none } */
+         a { text-decoration: none; color: black; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:focus { text-decoration: none; }
+        a:hover, a:active { text-decoration: none; }
+    </style>
+
 </head>
 
-<h1>넌 그럴때 뭐들어?</h1>
-
+<div id="top">
+    <div id="top-box">
+        <img src="{% static 'mydiary/images/music.png' %}" alt="a cat listening to music" width="100px" height="100px" />
+        <h1>넌 그럴때 뭐들어?</h1>
+    </div>
+        <p id="top-p">v-log 브금 찾는 사람 모여모여-!</p>
+</div>
 
 
 <main>
@@ -16,12 +31,12 @@
     </div>
 
     
-        {% for post in posts_list %}
-            <div class="for">
-                <h3> {{ post.title }}</h3>
-                <p class="date">{{ post.pub_date }}</p>
-                <p class="content">{{ post.body|linebreaks }}</p>
-            </div>   
-        {% endfor %}
+    {% for post in posts_list %}
+        <div class="for">
+            <a href="{% url 'detail' index=post.pk %}"> {{ post.title }}</a><br>
+        </div>   
+    {% endfor %}
+    
+    
     
 </main>

@@ -1,0 +1,39 @@
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/detailstyle.css' %}"/>
+    <link rel="shortcut icon" href="#">
+    <style type="text/css">
+         /* a { text-decoration:none } */
+         a { text-decoration: none; color: black; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:focus { text-decoration: none; }
+        a:hover, a:active { text-decoration: none; }
+    </style>
+
+</head>
+
+
+<div id="top">
+    <h1>자세히 보기</h1>
+</div>
+
+<main>
+    <div class="posts">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.body|linebreaks }}</p>
+        {% if post.pub_date %}
+            <div class="date">
+                {{ post.pub_date }}
+            </div>
+        {% endif%}
+    </div>
+</main>
+<br>
+<br>
+<aside>
+    <a id="left" href="{% url 'home' %}">홈</a><br>
+    <a id="left-a" href="{% url 'edit' index=post.pk %}">수정</a><br>
+    <a id="right-a"href="{% url 'delete' pk=post.pk %}">삭제</a>
+</aside>

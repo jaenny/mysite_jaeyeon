@@ -4,24 +4,48 @@
 *{
     box-sizing: border-box;
     background-color: #f7f8f2;
+    font-family: 'KOMACON';
+    color: #4f4f4f;
 }
 
-h1{
-    background-color: #8683dd;
-    height:130px;
-    font-family: 'Handon3gyeopsal600g';
-    text-align: center;
-    font-size: 50px;
-    color: #f7f8f2;
-    line-height: 130px;
+#top{
+    height: 130px;
+    background-color: #fbe472;
+}
 
+#top h1{
+    background-color: #fbe472;
+    font-family: 'Handon3gyeopsal600g';
+    color : #4f4f4f;
+    text-align: center;
+    line-height: 130px;
+    font-size: 50px;
 }
 
 main{
-    width: 500px;
+    width: 800px;
     margin: auto;
+    
 }
 
-button{
+.date{
     text-align: right;
+}
+
+aside{
+    width: 800px;
+    margin: auto;
+    display:flex;
+    justify-content : flex-end;
+}
+
+a{
+    background-color: #fbe472;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#left-a, #left{
+    margin-right: 10px;
 }

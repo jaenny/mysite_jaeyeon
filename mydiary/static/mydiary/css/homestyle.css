@@ -6,16 +6,54 @@
     background-color: #f7f8f2;
 }
 
-h1{
+#top{
     background-color: #8683dd;
-    height:130px;
+    height:250px;
     font-family: 'Handon3gyeopsal600g';
     text-align: center;
-    font-size: 50px;
     color: #f7f8f2;
-    line-height: 130px;
+}
+
+#top-box{
+    width: 800px;
+    margin: auto;
+    height: 170px;
+    background-color: #8683dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+img{
+    background-color: #8683dd;
+    line-height: 100px;
+   
+}
+
+h1{
+    background-color: #8683dd;
+    height:100px;
+    font-family: 'Handon3gyeopsal600g';
+    text-align: center;
+    font-size: 65px;
+    color: #f7f8f2;
+    line-height: 100px;
+    margin-left: 10px;
+    padding-top: 15px;
 
 }
+#top-p{
+    background-color: #8683dd;
+    height: 30px;
+    font-family: 'KOMACON';
+    color: #f7f8f2;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
 
 #m{
     height:50px;
@@ -27,8 +65,8 @@ h1{
     text-align: right;
     line-height: 24px;
     margin: 10px;
-    border: 2px #b8b6f8 solid;
-    padding: 3px;
+    border: 3px #f99bc1 solid;
+    padding-right: 2px;
     font-family: 'KOMACON';
     float: right;
     border-radius: 7px;
@@ -36,31 +74,20 @@ h1{
 }
 
 
-
-h3{
-    font-family: 'KOMACON';
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.date{
-    font-family: 'KOMACON';
-    font-size: 10px;
-    
-}
-
-p{
-    font-family: 'KOMACON';
-}
-
 main{
     width: 800px;
     margin: auto;
+    font-family: 'KOMACON';
 }
 
 .for{
+    font-family: 'Handon3gyeopsal600g';
     border: 2px #b8b6f8 solid;
-    padding: 1px;
+    padding: 5px;
     margin-bottom: 10px;
     border-radius: 7px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
 }

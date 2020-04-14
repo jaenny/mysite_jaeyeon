@@ -1,24 +1,27 @@
 {% load static %}
 
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/newstyle.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'mydiary/css/editstyle.css' %}"/>
     <link rel="shortcut icon" href="#">
     <style type="text/css">
-        /* a { text-decoration:none } */
-        a { text-decoration: none; color: black; }
+         a { text-decoration: none; color: black; }
         a:visited { text-decoration: none; }
         a:hover { text-decoration: none; }
         a:focus { text-decoration: none; }
         a:hover, a:active { text-decoration: none; }
     </style>
+
 </head>
 
 
-<h1>"이 땐 이거지~!" 싶은 노래를 추천해주세요</h1>
+
+<div id="top">
+    <h1>수정하기</h1>
+</div>
+
 <main>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">SAVE</button>
-    
+        <button type=submit class="save btn btn-default">Save</button>
     </form>
 </main>
