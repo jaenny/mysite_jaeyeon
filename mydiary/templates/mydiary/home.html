@@ -20,20 +20,28 @@
         <h1>넌 그럴때 뭐들어?</h1>
     </div>
         <p id="top-p">v-log 브금 찾는 사람 모여모여-!</p>
+        {% if user.is_unauthenticated %}
+        <p id="top-p">환영합니다. 회원가입 후 글쓰기 가능합니다.</p>
+        {% else %}
+        <p id="top-p">환영합니다 {{ user.username }}님, 행복한 하루 보내세요!</p>
 </div>
 
 
 <main>
     <div id="m">
-        <div id="link">
-            <a href="{% url 'new' %}">나도 추천 할래</a>
+        <div >
+            <a id="link" href="{% url 'new' %}">나도 추천 할래</a>
+            <a id="link" href="{% url 'register' %}">회원가입</a>
+            <a id="link" href="{% url 'login' %}">로그인</a>
+            <a id="link" href="{% url 'logout' %}">로그아웃</a><br><br>
+            {% endif %}
         </div>
     </div>
 
     
     {% for post in posts_list %}
         <div class="for">
-            <a href="{% url 'detail' index=post.pk %}"> {{ post.title }}</a><br>
+            <a href="{% url 'detail' pk=post.pk %}"> {{ post.title }}</a><br>
         </div>   
     {% endfor %}
     
