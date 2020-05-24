@@ -39,13 +39,22 @@ aside{
     justify-content : flex-end;
 }
 
-a{
+/* a{
     background-color: #fbe472;
     border-radius: 5px;
     padding: 5px;
 
-}
+} */
 
 #left-a, #left{
+    background-color: #fbe472;
+    border-radius: 5px;
+    padding: 5px;
     margin-right: 10px;
+}
+
+#right-a{
+    background-color: #fbe472;
+    border-radius: 5px;
+    padding: 5px;
 }

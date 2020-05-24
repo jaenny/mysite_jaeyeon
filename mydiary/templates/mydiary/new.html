@@ -16,7 +16,8 @@
 
 <h1>"이 땐 이거지~!" 싶은 노래를 추천해주세요</h1>
 <main>
-    <form method="POST" class="post-form">{% csrf_token %}
+    <form method="POST" class="post-form" enctype='multipart/form-data'>
+        {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">SAVE</button>
     
